@@ -32,7 +32,7 @@ jobs:
 * `TEMPLATE` - [Optional]. YML file containing CloudFormation Stack.
   * Type: `string`
   * Default: `template.yml`
-* `NPM_DIRECTORY` - [Optional]. YML file containing CloudFormation Stack.
+* `NPM_DIRECTORY` - [Optional]. Directory to run npm install in.
   * Type: `string`
 * `CAPABILITIES` - [Optional]. AWS Stack Capabilites.
   * Type: `string`
