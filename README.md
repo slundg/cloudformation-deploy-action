@@ -19,6 +19,7 @@ jobs:
     - uses: mgenteluci/cloudformation-deploy-action@v1.4.0
       env:
         TEMPLATE: 'template.yml'
+        NPM_DIRECTORY: 'src'
         AWS_STACK_NAME: 'my-stack'
         AWS_REGION: 'us-east-1'
         AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
@@ -31,6 +32,8 @@ jobs:
 * `TEMPLATE` - [Optional]. YML file containing CloudFormation Stack.
   * Type: `string`
   * Default: `template.yml`
+* `NPM_DIRECTORY` - [Optional]. YML file containing CloudFormation Stack.
+  * Type: `string`
 * `CAPABILITIES` - [Optional]. AWS Stack Capabilites.
   * Type: `string`
   * Default: `CAPABILITY_IAM`
