@@ -13,6 +13,12 @@ if [[ -z "$TEMPLATE" ]]; then
     TEMPLATE="template.yml"
 fi
 
+if [[ "$NPM_DIRECTORY" ]]; then
+    pushd $NPM_DIRECTORY
+    npm install
+    popd
+fi
+
 if [[ -z "$AWS_STACK_NAME" ]]; then
     echo AWS Stack Name invalid
     exit 1

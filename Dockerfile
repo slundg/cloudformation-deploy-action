@@ -13,7 +13,7 @@ LABEL maintainer="Matheus Genteluci <mgenteluci97@gmail.com>"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update && apt-get install -y awscli
+RUN apt-get update && apt-get install -y awscli npm
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
